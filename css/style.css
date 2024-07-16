@@ -1,5 +1,9 @@
+@font-face {
+  font-family: "Inter Display";
+  src: url("../assets/InterDisplay-Light.ttf") format("truetype");
+}
 * {
-  --main-font: "Inter", sans-serif;
+  --main-font: "Inter Display", sans-serif;
   --secondary-font: "Oranienbaum", "sans-serif";
 
   --font-size-small: 1rem;
@@ -22,7 +26,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: var(--main-font);
   font-size: var(--font-size-small);
@@ -38,6 +41,7 @@ body {
   scroll-behavior: smooth;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 a {
   text-decoration: none;
@@ -45,6 +49,15 @@ a {
 .line-height-xs {
   line-height: var(--line-height-extra-small);
 }
+.section-header {
+  font-family: var(--secondary-font);
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-normal);
+}
+
+/* header style  */
 nav ul {
   list-style-type: none;
   display: flex;
@@ -88,4 +101,17 @@ header {
   width: 24px;
   height: 24px;
   text-align: center;
+}
+
+/* promotion style  */
+.promotions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.promotions-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 413px;
+  gap: 1.5rem;
 }
