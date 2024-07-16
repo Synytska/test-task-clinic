@@ -1,5 +1,28 @@
+* {
+  --main-font: "Oranienbaum", sans-serif;
+  --secondary-font: "Inter", "sans-serif";
+
+  --font-size-small: 1rem;
+  --font-size-medium: 1.5rem;
+  --font-size-large: 2.5rem;
+  --font-weight-normal: 400;
+
+  --line-height-extra-small: 1.2rem;
+  --line-height-small: 1.5rem;
+  --line-height-medium: 2rem;
+  --line-height-large: 3rem;
+
+  --main-text-color: #2b3f5b;
+  --additional-text-color: #cc8e1e;
+  --main-black-color: #000000;
+}
+
 body {
   box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-small);
   margin: 0;
   padding: 0 80px;
   display: flex;
