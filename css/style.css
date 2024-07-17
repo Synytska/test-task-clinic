@@ -308,10 +308,66 @@ tbody tr {
   border-bottom: 26px solid #ffffff;
   text-align: center;
 }
-td:nth-child(1){
-    text-align: end;
+td:nth-child(1) {
+  text-align: end;
 }
-td:nth-child(2){
-    text-align: left;
-    padding-left: 60px;
+td:nth-child(2) {
+  text-align: left;
+  padding-left: 60px;
+}
+
+/* contacts style  */
+.contacts {
+  align-items: center;
+  gap: 116px;
+}
+.contacts-logo {
+  max-width: 735px;
+}
+.contacts-block {
+  display: flex;
+  align-items: center;
+  gap: 6.25rem;
+  width: 100%;
+  background-color: var(--main-white-color);
+  padding: 85px 0;
+  padding-left: 108px;
+  position: relative;
+}
+.contacts-warshaw-map {
+  position: absolute;
+  top: -20%;
+  z-index: 0;
+}
+.contacts-block_cont-img_address {
+  position: relative;
+  z-index: 100;
+  margin-left: 4.25rem;
+}
+.contacts-block_cont-social {
+  z-index: 100;
+}
+.contacts-block_cont-img_address-map-icon {
+  display: flex;
+  gap: 1.75rem;
+  padding-top: 7px;
+}
+.contacts-block_cont-number{
+gap: 0.813rem;
+}
+.contacts-block_cont-number_p{
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    padding-top: 5px;
+}
+.contacts-h3{
+    color: var(--main-text-color);
+}
+.contacts-h3-white{
+    color: var(--main-white-color);
+}
+.contacts-block_cont-social-icons{
+    display: flex;
+    gap: 1.875rem;
+    padding-top: 2rem;
 }
