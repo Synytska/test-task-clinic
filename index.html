@@ -7,28 +7,53 @@
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
-      <img class="header-logo" src="images/main-icon.svg" />
-      <div class="header-burger">
+    <div class="header-divider"></div>
+    <div class="page-wrapper">
+      <header>
+        <img class="header-logo" src="images/main-icon.svg" />
+        <!-- <div class="header-burger">
         <div id="bar1" class="bar"></div>
         <div id="bar2" class="bar"></div>
         <div id="bar3" class="bar"></div>
-      </div>
-      <nav>
-        <ul class="line-height-xs">
-          <li class="header-li"><a href="#">Nasi lekarze</a></li>
-          <li class="header-li"><a href="#">Kontact</a></li>
+      </div> -->
+        <nav class="header-nav">
+          <ul class="line-height-xs head-ul">
+            <li class="header-li"><a href="#">Nasi lekarze</a></li>
+            <li class="header-li"><a href="#">Kontact</a></li>
+            <li class="dropdown">
+              <span>Programs</span>
+              <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
+              <div class="dropdown-content">
+                <a href="#">Program 1</a>
+                <a href="#">Program 2</a>
+                <a href="#">Program 3</a>
+              </div>
+            </li>
+            <li class="dropdown">
+              <span>O nas</span>
+              <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
+              <div class="dropdown-content">
+                <a href="#">Info 1</a>
+                <a href="#">Info 2</a>
+                <a href="#">Info 3</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-burger">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <div class="header-right">
+          <div class="header-right_user-icon flex-col">
+            <a href="#offers"><img src="images/user-icon.svg" /></a>
+          </div>
+          <a href="#contacts" class="button-paddings button1-style butt-a">
+            <span>Skontaktuj się z nami</span>
+          </a>
           <li class="dropdown">
-            <span>Programs</span>
-            <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
-            <div class="dropdown-content">
-              <a href="#">Program 1</a>
-              <a href="#">Program 2</a>
-              <a href="#">Program 3</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <span>O nas</span>
+            <span class="line-height-xs">PL</span>
             <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
             <div class="dropdown-content">
               <a href="#">Info 1</a>
@@ -36,328 +61,319 @@
               <a href="#">Info 3</a>
             </div>
           </li>
-        </ul>
-      </nav>
-      <div class="header-right">
-        <div class="header-right_user-icon flex-col">
-          <a href="#offers"><img src="images/user-icon.svg" /></a>
-        </div>
-        <a href="#contacts" class="button-paddings button1-style butt-a">
-          <span>Skontaktuj się z nami</span>
-        </a>
-        <li class="dropdown">
-          <span class="line-height-xs">PL</span>
-          <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
-          <div class="dropdown-content">
-            <a href="#">Info 1</a>
-            <a href="#">Info 2</a>
-            <a href="#">Info 3</a>
-          </div>
-        </li>
-        <div class="header-right-switchers">
-          <div class="header-right-switcher1">
-            <img src="images/sun-icon.svg" />
-          </div>
-          <div class="header-right-switcher2">
-            <img src="images/moon-icon.svg" />
-          </div>
-        </div>
-      </div>
-    </header>
-    <main class="flex-col">
-      <section class="promotions">
-        <div class="promotions-left flex-col">
-          <h2 class="section-header">Aкції та Акційні пакети</h2>
-          <p>
-            Ми завжди прагнемо підвищити рівень сервісу надаваних медичних
-            послуг, і вдячні вам за залишений позитивний відгук. Ми беремо до
-            уваги всі коментарі та побажання, які відносяться до нашої роботи.
-            Дякуємо за ваш вибір.
-          </p>
-        </div>
-        <div class="promotions-right">
-          <img src="images/promotions-photo.svg" />
-        </div>
-      </section>
-      <section class="packages flex-col section-gap">
-        <h2 class="section-header">пакети</h2>
-        <div class="packages-info">
-          <div class="packages-info_block flex-col">
-            <h3 class="subsection-header">УЗД всього організму для жінок</h3>
-            <ul>
-              <li>УЗД всього організму для жінок</li>
-              <li>Щитовидна залоза</li>
-              <li>Молочні залози</li>
-              <li>
-                Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
-                залоза, селезінка)
-              </li>
-              <li>Нирки та наднирокові залози</li>
-              <li>Органи малого тазу</li>
-              <li>Ціна — <span class="crossline">2600</span> грн.</li>
-              <li>Ціна по акції — 1280 грн</li>
-            </ul>
-            <button class="button1-style packages-info_block_button">
-              Переглянути детальніше
-            </button>
-          </div>
-          <div class="packages-info_block flex-col">
-            <h3 class="subsection-header">УЗД всього організму для жінок</h3>
-            <ul>
-              <li>УЗД всього організму для жінок</li>
-              <li>Щитовидна залоза</li>
-              <li>Молочні залози</li>
-              <li>
-                Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
-                залоза, селезінка)
-              </li>
-              <li>Нирки та наднирокові залози</li>
-              <li>Органи малого тазу</li>
-              <li>Ціна — <span class="crossline">2600</span> грн.</li>
-              <li>Ціна по акції — 1280 грн</li>
-            </ul>
-            <button class="button1-style packages-info_block_button">
-              Переглянути детальніше
-            </button>
-          </div>
-          <div class="packages-info_block flex-col">
-            <h3 class="subsection-header">УЗД всього організму для жінок</h3>
-            <ul>
-              <li>УЗД всього організму для жінок</li>
-              <li>Щитовидна залоза</li>
-              <li>Молочні залози</li>
-              <li>
-                Органи черевної порожнини ( печінка, жовчний міхур, підшлункова
-                залоза, селезінка)
-              </li>
-              <li>Нирки та наднирокові залози</li>
-              <li>Органи малого тазу</li>
-              <li>Ціна — <span class="crossline">2600</span> грн.</li>
-              <li>Ціна по акції — 1280 грн</li>
-            </ul>
-            <button class="button1-style packages-info_block_button">
-              Переглянути детальніше
-            </button>
-          </div>
-        </div>
-      </section>
-      <section id="offers" class="offers flex-col section-gap section-top-padd">
-        <h2 class="section-header">Акційні пропозиції</h2>
-        <div class="offers-info">
-          <div class="offers-info_left">
-            <div class="offers-info_left-img left-arrow-radius">
-              <img src="images/arrow-left.svg" />
+          <div class="header-right-switchers">
+            <div class="header-right-switcher1">
+              <img src="images/sun-icon.svg" />
             </div>
-            <div class="offers-info_left-slider flex-col">
-              <img src="images/offers-photo.svg" />
-              <h3 class="h3-text">
-                Акція "-40% на пробне заняття з кінезітерапії"
-              </h3>
-              <p>
-                Маєте чудову нагоду потурбуватись про власне здоров’я за
-                вигідною пропозицією вартістю 680 408 грн.
+            <div class="header-right-switcher2">
+              <img src="images/moon-icon.svg" />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="flex-col">
+        <section class="promotions">
+          <div class="promotions-left flex-col">
+            <h2 class="section-header">Aкції та Акційні пакети</h2>
+            <p>
+              Ми завжди прагнемо підвищити рівень сервісу надаваних медичних
+              послуг, і вдячні вам за залишений позитивний відгук. Ми беремо до
+              уваги всі коментарі та побажання, які відносяться до нашої роботи.
+              Дякуємо за ваш вибір.
+            </p>
+          </div>
+          <div class="promotions-right">
+            <img src="images/promotions-photo.svg" />
+          </div>
+        </section>
+        <section class="packages flex-col section-gap">
+          <h2 class="section-header">пакети</h2>
+          <div class="packages-info">
+            <div class="packages-info_block flex-col">
+              <h3 class="subsection-header">УЗД всього організму для жінок</h3>
+              <ul>
+                <li>УЗД всього організму для жінок</li>
+                <li>Щитовидна залоза</li>
+                <li>Молочні залози</li>
+                <li>
+                  Органи черевної порожнини ( печінка, жовчний міхур,
+                  підшлункова залоза, селезінка)
+                </li>
+                <li>Нирки та наднирокові залози</li>
+                <li>Органи малого тазу</li>
+                <li>Ціна — <span class="crossline">2600</span> грн.</li>
+                <li>Ціна по акції — 1280 грн</li>
+              </ul>
+              <button class="button1-style packages-info_block_button">
+                Переглянути детальніше
+              </button>
+            </div>
+            <div class="packages-info_block flex-col">
+              <h3 class="subsection-header">УЗД всього організму для жінок</h3>
+              <ul>
+                <li>УЗД всього організму для жінок</li>
+                <li>Щитовидна залоза</li>
+                <li>Молочні залози</li>
+                <li>
+                  Органи черевної порожнини ( печінка, жовчний міхур,
+                  підшлункова залоза, селезінка)
+                </li>
+                <li>Нирки та наднирокові залози</li>
+                <li>Органи малого тазу</li>
+                <li>Ціна — <span class="crossline">2600</span> грн.</li>
+                <li>Ціна по акції — 1280 грн</li>
+              </ul>
+              <button class="button1-style packages-info_block_button">
+                Переглянути детальніше
+              </button>
+            </div>
+            <div class="packages-info_block flex-col">
+              <h3 class="subsection-header">УЗД всього організму для жінок</h3>
+              <ul>
+                <li>УЗД всього організму для жінок</li>
+                <li>Щитовидна залоза</li>
+                <li>Молочні залози</li>
+                <li>
+                  Органи черевної порожнини ( печінка, жовчний міхур,
+                  підшлункова залоза, селезінка)
+                </li>
+                <li>Нирки та наднирокові залози</li>
+                <li>Органи малого тазу</li>
+                <li>Ціна — <span class="crossline">2600</span> грн.</li>
+                <li>Ціна по акції — 1280 грн</li>
+              </ul>
+              <button class="button1-style packages-info_block_button">
+                Переглянути детальніше
+              </button>
+            </div>
+          </div>
+        </section>
+        <section
+          id="offers"
+          class="offers flex-col section-gap section-top-padd"
+        >
+          <h2 class="section-header">Акційні пропозиції</h2>
+          <div class="offers-info">
+            <div class="offers-info_left">
+              <div class="offers-info_left-img left-arrow-radius">
+                <img src="images/arrow-left.svg" />
+              </div>
+              <div class="offers-info_left-slider flex-col">
+                <img src="images/offers-photo.svg" />
+                <h3 class="h3-text">
+                  Акція "-40% на пробне заняття з кінезітерапії"
+                </h3>
+                <p>
+                  Маєте чудову нагоду потурбуватись про власне здоров’я за
+                  вигідною пропозицією вартістю 680 408 грн.
+                </p>
+                <p class="offers-info_left-slider-link">
+                  Переглянути детальніше
+                </p>
+              </div>
+              <div class="offers-info_left-img right-arrow-radius">
+                <img src="images/arrow-right.svg" />
+              </div>
+            </div>
+            <div class="offers-info_right">
+              <form>
+                <h3 class="h3-text offers-info_right-h3">Czekamy na Ciebie!</h3>
+                <div class="offers-info_right-inputs flex-col">
+                  <div class="offers-info_right-input">
+                    <label for="name-surname">Imię i nazwisko</label>
+                    <input
+                      type="text"
+                      id="name-surname"
+                      name="name-surname"
+                      placeholder="Name Surname"
+                      required
+                    />
+                  </div>
+                  <div class="offers-info_right-input fle">
+                    <label for="number">Phone</label>
+                    <input
+                      type="tel"
+                      id="number"
+                      name="number"
+                      placeholder="+48 XXX XXX XXX"
+                      required
+                    />
+                  </div>
+                  <div class="offers-info_right-input">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="name@gmail.com"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="offers-info_right-checkbox">
+                  <input
+                    type="checkbox"
+                    id="agreement"
+                    name="agreement"
+                    required
+                  />
+                  <label for="agreement">
+                    Wypełnienie formularza zgłoszeniowego jest równoznaczne z
+                    wyrażeniem zgody na przetwarzanie danych osobowych,
+                    otrzymywanie newslettera, oraz kontakt telefoniczny
+                  </label>
+                </div>
+                <button type="submit" class="button2-style">Wyślij</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="prices flex-col section-gap section-top-padd">
+          <h2 class="section-header">прайс-лист</h2>
+          <div class="prices-table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Kod</th>
+                  <th>Konsultacje</th>
+                  <th>Cena brutto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Telekonsultacja anestezjologiczna</td>
+                  <td>190 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <th>Kod</th>
+                  <th>Badania</th>
+                  <th>Cena brutto</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Telekonsultacja anestezjologiczna</td>
+                  <td>190 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+                <tr>
+                  <td>89.000</td>
+                  <td>Konsultacja anestezjologiczna</td>
+                  <td>280 zł </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section id="contacts" class="contacts flex-col">
+          <img
+            class="contacts-logo"
+            src="images/contact-logo.svg"
+            alt="contacts logo"
+          />
+          <div class="contacts-block">
+            <div class="contacts-block_cont-number flex-col">
+              <p>W razie jakichkolwiek pytań, zadzwoń</p>
+              <h3 class="h3-text contacts-h3">+48 00 000 00 00</h3>
+              <p class="contacts-block_cont-number_p">
+                Pon. - Pt.: 07:00-20:00
               </p>
-              <p class="offers-info_left-slider-link">Переглянути детальніше</p>
             </div>
-            <div class="offers-info_left-img right-arrow-radius">
-              <img src="images/arrow-right.svg" />
-            </div>
-          </div>
-          <div class="offers-info_right">
-            <form>
-              <h3 class="h3-text offers-info_right-h3">Czekamy na Ciebie!</h3>
-              <div class="offers-info_right-inputs flex-col">
-                <div class="offers-info_right-input">
-                  <label for="name-surname">Imię i nazwisko</label>
-                  <input
-                    type="text"
-                    id="name-surname"
-                    name="name-surname"
-                    placeholder="Name Surname"
-                    required
-                  />
-                </div>
-                <div class="offers-info_right-input fle">
-                  <label for="number">Phone</label>
-                  <input
-                    type="tel"
-                    id="number"
-                    name="number"
-                    placeholder="+48 XXX XXX XXX"
-                    required
-                  />
-                </div>
-                <div class="offers-info_right-input">
-                  <label for="email">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="name@gmail.com"
-                    required
-                  />
+            <div class="contacts-block_cont-img">
+              <img class="contacts-warshaw-map" src="images/map-warshaw.svg" />
+              <div class="contacts-block_cont-img_address">
+                <p class="contacts-h3-white">Nasz adres</p>
+                <h3 class="h3-text contacts-h3-white">Lorem,</h3>
+                <div class="contacts-block_cont-img_address-map-icon">
+                  <h3 class="h3-text contacts-h3-white">01-005 Warszawa</h3>
+                  <img class="contacts-map-icon" src="images/map-icon.svg" />
                 </div>
               </div>
-              <div class="offers-info_right-checkbox">
-                <input
-                  type="checkbox"
-                  id="agreement"
-                  name="agreement"
-                  required
-                />
-                <label for="agreement">
-                  Wypełnienie formularza zgłoszeniowego jest równoznaczne z
-                  wyrażeniem zgody na przetwarzanie danych osobowych,
-                  otrzymywanie newslettera, oraz kontakt telefoniczny
-                </label>
-              </div>
-              <button type="submit" class="button2-style">Wyślij</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <section class="prices flex-col section-gap section-top-padd">
-        <h2 class="section-header">прайс-лист</h2>
-        <div class="prices-table">
-          <table>
-            <thead>
-              <tr>
-                <th>Kod</th>
-                <th>Konsultacje</th>
-                <th>Cena brutto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Telekonsultacja anestezjologiczna</td>
-                <td>190 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <th>Kod</th>
-                <th>Badania</th>
-                <th>Cena brutto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Telekonsultacja anestezjologiczna</td>
-                <td>190 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-              <tr>
-                <td>89.000</td>
-                <td>Konsultacja anestezjologiczna</td>
-                <td>280 zł </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-      <section id="contacts" class="contacts flex-col">
-        <img
-          class="contacts-logo"
-          src="images/contact-logo.svg"
-          alt="contacts logo"
-        />
-        <div class="contacts-block">
-          <div class="contacts-block_cont-number flex-col">
-            <p>W razie jakichkolwiek pytań, zadzwoń</p>
-            <h3 class="h3-text contacts-h3">+48 00 000 00 00</h3>
-            <p class="contacts-block_cont-number_p">Pon. - Pt.: 07:00-20:00</p>
-          </div>
-          <div class="contacts-block_cont-img">
-            <img class="contacts-warshaw-map" src="images/map-warshaw.svg" />
-            <div class="contacts-block_cont-img_address">
-              <p class="contacts-h3-white">Nasz adres</p>
-              <h3 class="h3-text contacts-h3-white">Lorem,</h3>
-              <div class="contacts-block_cont-img_address-map-icon">
-                <h3 class="h3-text contacts-h3-white">01-005 Warszawa</h3>
-                <img class="contacts-map-icon" src="images/map-icon.svg" />
-              </div>
             </div>
-          </div>
-          <div class="contacts-block_cont-social">
-            <p>Nasz adres e-mail</p>
-            <h3 class="h3-text contacts-h3">info@lorem.center</h3>
+            <div class="contacts-block_cont-social">
+              <p>Nasz adres e-mail</p>
+              <h3 class="h3-text contacts-h3">info@lorem.center</h3>
 
-            <div class="contacts-block_cont-social-icons">
-              <img src="images/instagram-icon.svg" /><img
-                src="images/facebook-icon.svg"
-              /><img src="images/linkedin-icon.svg" /><img
-                src="images/youtube-icon.svg"
-              />
+              <div class="contacts-block_cont-social-icons">
+                <img src="images/instagram-icon.svg" /><img
+                  src="images/facebook-icon.svg"
+                /><img src="images/linkedin-icon.svg" /><img
+                  src="images/youtube-icon.svg"
+                />
+              </div>
             </div>
           </div>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-warning flex-col">
+          <p>
+            Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze
+            strony jest dozwolone tylko za zgodą właściciela praw autorskich i
+            tylko z powołaniem się na źródło.
+          </p>
+          <img src="images/visa-icon.svg" />
         </div>
-      </section>
-    </main>
-    <footer>
-      <div class="footer-warning flex-col">
-        <p>
-          Jakiekolwiek wykorzystanie lub kopiowanie wybranych materiałów ze
-          strony jest dozwolone tylko za zgodą właściciela praw autorskich i
-          tylko z powołaniem się na źródło.
-        </p>
-        <img src="images/visa-icon.svg" />
-      </div>
-      <div class="footer-nav">
-        <ul>
-          <li>O nas</li>
-          <li>Usługi</li>
-          <li>Blog</li>
-          <li>Praca</li>
-          <li>Cennik</li>
-        </ul>
-        <div class="footer-nav_paragraphs">
-          <p>Lokalizacja</p>
-          <p>Skontaktuj się z nami</p>
+        <div class="footer-nav">
+          <ul>
+            <li>O nas</li>
+            <li>Usługi</li>
+            <li>Blog</li>
+            <li>Praca</li>
+            <li>Cennik</li>
+          </ul>
+          <div class="footer-nav_paragraphs">
+            <p>Lokalizacja</p>
+            <p>Skontaktuj się z nami</p>
+          </div>
+          <div class="footer-nav_icons">
+            <img src="images/instagram-footer.svg" alt="Instagram icon" />
+            <img src="images/facebook-footer.svg" alt="Facebook icon" />
+            <img src="images/linkedin-footer.svg" alt="Linkedin icon" />
+            <img src="images/youtube-footer.svg" alt="Youtube icon" />
+          </div>
         </div>
-        <div class="footer-nav_icons">
-          <img src="images/instagram-footer.svg" alt="Instagram icon" />
-          <img src="images/facebook-footer.svg" alt="Facebook icon" />
-          <img src="images/linkedin-footer.svg" alt="Linkedin icon" />
-          <img src="images/youtube-footer.svg" alt="Youtube icon" />
+        <div class="footer-safety-info">
+          <ul>
+            <li>POLITYKA PRYWATNOŚCI</li>
+            <li>REGULAMIN</li>
+            <li>PRZYGOTOWANIE DO BADAŃ</li>
+            <li>INFORMACJA O PRAWACH PACJENTA</li>
+            <li>POLITYKA COOKIE</li>
+          </ul>
         </div>
-      </div>
-      <div class="footer-safety-info">
-        <ul>
-          <li>POLITYKA PRYWATNOŚCI</li>
-          <li>REGULAMIN</li>
-          <li>PRZYGOTOWANIE DO BADAŃ</li>
-          <li>INFORMACJA O PRAWACH PACJENTA</li>
-          <li>POLITYKA COOKIE</li>
-        </ul>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script src="index.js"></script>
   </body>
 </html>
