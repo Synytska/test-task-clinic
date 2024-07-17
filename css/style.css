@@ -75,6 +75,9 @@ input:focus {
 .section-gap {
   gap: 3rem;
 }
+.section-top-padd {
+  padding-top: 1.688rem;
+}
 .h3-text {
   font-family: var(--secondary-font);
   color: var(--main-black-color);
@@ -90,9 +93,9 @@ input:focus {
   flex-direction: column;
 }
 main {
-  min-height: 100vh;
   justify-content: space-between;
   padding-top: 5.5rem;
+  gap: 5.563rem;
 }
 button {
   font-family: var(--main-font);
@@ -319,7 +322,8 @@ td:nth-child(2) {
 /* contacts style  */
 .contacts {
   align-items: center;
-  gap: 116px;
+  gap: 10rem;
+  padding-top: 3.625rem;
 }
 .contacts-logo {
   max-width: 735px;
@@ -336,7 +340,7 @@ td:nth-child(2) {
 }
 .contacts-warshaw-map {
   position: absolute;
-  top: -20%;
+  top: -15%;
   z-index: 0;
 }
 .contacts-block_cont-img_address {
@@ -374,7 +378,7 @@ td:nth-child(2) {
 
 /* footer style  */
 footer {
-  padding-top: 100px;
+  padding-top: 10rem;
   display: flex;
   justify-content: space-between;
 }
