@@ -26,6 +26,7 @@
   --main-white-color: #ffffff;
   --main-background-color: #f6f5f2;
   --button-background-color: #f2eada;
+  --border-opacity-27: 1px solid rgba(204, 142, 30, 0.27);
 
   margin: 0;
   padding: 0;
@@ -70,6 +71,9 @@ input:focus {
   line-height: var(--line-height-medium);
   color: var(--additional-text-color);
   font-weight: var(--font-weight-normal);
+}
+.section-gap {
+  gap: 3rem;
 }
 .h3-text {
   font-family: var(--secondary-font);
@@ -161,16 +165,13 @@ header {
 }
 
 /* packages style  */
-.packages {
-  gap: 48px;
-}
 .packages-info {
   display: flex;
   gap: 20px;
 }
 .packages-info_block {
   background-color: var(--main-white-color);
-  border: 1px solid rgba(204, 142, 30, 0.27);
+  border: var(--border-opacity-27);
   gap: 16px;
   padding: 24px;
 }
@@ -179,9 +180,6 @@ header {
 }
 
 /* offers style  */
-.offers {
-  gap: 48px;
-}
 .offers-info {
   display: flex;
   gap: 30px;
@@ -198,7 +196,7 @@ header {
   color: var(--additional-text-color);
 }
 .offers-info_right {
-  border: 1px solid rgba(204, 142, 30, 0.27);
+  border: var(--border-opacity-27);
   padding: 26px 26px 40px;
 }
 .offers-info_right-h3 {
@@ -270,4 +268,50 @@ input[type="email"] {
   border-bottom: 3px solid var(--additional-text-color);
   transform: rotate(-45deg);
   transform-origin: center;
+}
+
+/* prices style  */
+.prices-table {
+  padding: 48px 108px;
+  background-color: var(--main-white-color);
+  border: var(--border-opacity-27);
+}
+.prices-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-family: var(--secondary-font);
+}
+thead tr {
+  background-color: #faf4e8;
+}
+tbody tr {
+  background-color: #f1efe9;
+}
+th {
+  padding: 16px 0;
+  font-size: var(--font-size-average);
+  line-height: var(--line-height-average);
+  font-weight: var(--font-weight-normal);
+}
+td {
+  padding: 8px 0;
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-medium);
+}
+thead::after {
+  content: "";
+  display: table-row;
+  height: 26px;
+}
+tbody tr {
+  border-bottom: 26px solid #ffffff;
+  text-align: center;
+}
+td:nth-child(1){
+    text-align: end;
+}
+td:nth-child(2){
+    text-align: left;
+    padding-left: 60px;
 }
