@@ -33,9 +33,9 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="flex-col">
       <section class="promotions">
-        <div class="promotions-left">
+        <div class="promotions-left flex-col">
           <h2 class="section-header">Aкції та Акційні пакети</h2>
           <p>
             Ми завжди прагнемо підвищити рівень сервісу надаваних медичних
@@ -48,10 +48,10 @@
           <img src="images/promotions-photo.svg" />
         </div>
       </section>
-      <section class="packages">
+      <section class="packages flex-col">
         <h2 class="section-header">пакети</h2>
         <div class="packages-info">
-          <div class="packages-info_block">
+          <div class="packages-info_block flex-col">
             <h3 class="subsection-header">УЗД всього організму для жінок</h3>
             <ul>
               <li>УЗД всього організму для жінок</li>
@@ -70,7 +70,7 @@
               Переглянути детальніше
             </button>
           </div>
-          <div class="packages-info_block">
+          <div class="packages-info_block flex-col">
             <h3 class="subsection-header">УЗД всього організму для жінок</h3>
             <ul>
               <li>УЗД всього організму для жінок</li>
@@ -89,7 +89,7 @@
               Переглянути детальніше
             </button>
           </div>
-          <div class="packages-info_block">
+          <div class="packages-info_block flex-col">
             <h3 class="subsection-header">УЗД всього організму для жінок</h3>
             <ul>
               <li>УЗД всього організму для жінок</li>
@@ -110,7 +110,77 @@
           </div>
         </div>
       </section>
-      <section class="offers"></section>
+      <section class="offers flex-col">
+        <h2 class="section-header">Акційні пропозиції</h2>
+        <div class="offers-info">
+          <div class="offers-info_left">
+            <img src="images/arrow-left.svg" />
+            <div class="offers-info_left-slider flex-col">
+              <img src="images/offers-photo.svg" />
+              <h3 class="h3-text">
+                Акція "-40% на пробне заняття з кінезітерапії"
+              </h3>
+              <p>
+                Маєте чудову нагоду потурбуватись про власне здоров’я за
+                вигідною пропозицією вартістю 680 408 грн.
+              </p>
+              <p class="offers-info_left-slider-link">Переглянути детальніше</p>
+            </div>
+            <img src="images/arrow-right.svg" />
+          </div>
+          <div class="offers-info_right">
+            <form>
+              <h3 class="h3-text offers-info_right-h3">Czekamy na Ciebie!</h3>
+              <div class="offers-info_right-inputs flex-col">
+                <div class="offers-info_right-input">
+                  <label for="name-surname">Imię i nazwisko</label>
+                  <input
+                    type="text"
+                    id="name-surname"
+                    name="name-surname"
+                    placeholder="Name Surname"
+                    required
+                  />
+                </div>
+                <div class="offers-info_right-input fle">
+                  <label for="number">Phone</label>
+                  <input
+                    type="tel"
+                    id="number"
+                    name="number"
+                    placeholder="+48 XXX XXX XXX"
+                    required
+                  />
+                </div>
+                <div class="offers-info_right-input">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@gmail.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="offers-info_right-checkbox">
+                <input
+                  type="checkbox"
+                  id="agreement"
+                  name="agreement"
+                  required
+                />
+                <label for="agreement">
+                  Wypełnienie formularza zgłoszeniowego jest równoznaczne z
+                  wyrażeniem zgody na przetwarzanie danych osobowych,
+                  otrzymywanie newslettera, oraz kontakt telefoniczny
+                </label>
+              </div>
+              <button type="submit" class="button2-style">Wyślij</button>
+            </form>
+          </div>
+        </div>
+      </section>
       <section class="prices"></section>
       <section class="contacts"></section>
     </main>
