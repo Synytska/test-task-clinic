@@ -8,7 +8,12 @@
   </head>
   <body>
     <header>
-      <img src="images/main-icon.svg" />
+      <img class="header-logo" src="images/main-icon.svg" />
+      <div class="header-burger">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
       <nav>
         <ul class="line-height-xs">
           <li class="header-li"><a href="#">Nasi lekarze</a></li>
@@ -34,10 +39,12 @@
         </ul>
       </nav>
       <div class="header-right">
-        <img src="images/user-icon.svg" />
-        <button class="button-paddings button1-style">
-          Skontaktuj się z nami
-        </button>
+        <div class="header-right_user-icon flex-col">
+          <a href="#offers"><img src="images/user-icon.svg" /></a>
+        </div>
+        <a href="#contacts" class="button-paddings button1-style butt-a">
+          <span>Skontaktuj się z nami</span>
+        </a>
         <li class="dropdown">
           <span class="line-height-xs">PL</span>
           <a href="#" class="dropbtn"><img src="images/arrow.svg" /></a>
@@ -134,7 +141,7 @@
           </div>
         </div>
       </section>
-      <section class="offers flex-col section-gap section-top-padd">
+      <section id="offers" class="offers flex-col section-gap section-top-padd">
         <h2 class="section-header">Акційні пропозиції</h2>
         <div class="offers-info">
           <div class="offers-info_left">
@@ -276,7 +283,7 @@
           </table>
         </div>
       </section>
-      <section class="contacts flex-col">
+      <section id="contacts" class="contacts flex-col">
         <img
           class="contacts-logo"
           src="images/contact-logo.svg"
