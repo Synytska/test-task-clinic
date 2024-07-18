@@ -27,6 +27,8 @@
   --main-background-color: #f6f5f2;
   --button-background-color: #f2eada;
   --swiper-pagination-color: #cc8e1e;
+  --swiper-scrollbar-bg-color: #f6f5f2;
+  --swiper-scrollbar-drag-bg-color: #cc8e1e;
   --border-opacity-27: 1px solid rgba(204, 142, 30, 0.27);
 
   margin: 0;
@@ -253,17 +255,33 @@ header {
 }
 
 /* offers style  */
-.swiper-container {
+.swiper-container,
+.swiper-container-vertical {
   position: relative;
   width: 100%;
   max-width: 837px;
   margin: 0 auto;
   overflow: hidden;
 }
-.swiper-wrapper {
+.swiper-container-vertical {
+  max-height: 381px;
+  max-width: 100%;
+}
+.swiper-container > .swiper-wrapper {
   max-width: 100%;
   width: 100%;
   padding-left: 104px;
+}
+.swiper-container-vertical > .swiper-wrapper {
+  max-width: 100%;
+  width: 100%;
+}
+.swiper-container-vertical > .swiper-wrapper > .swiper-slide {
+  display: flex !important;
+  justify-content: center;
+}
+.swiper-scrollbar {
+  right: 5% !important;
 }
 .swiper-slide img {
   max-width: 100%;
@@ -426,12 +444,13 @@ input[type="email"] {
 
 /* prices style  */
 .prices-table {
-  padding: 48px 108px;
+  padding: 48px 0;
   background-color: var(--main-white-color);
   border: var(--border-opacity-27);
 }
 .prices-table table {
   width: 100%;
+  max-width: 902px;
   border-collapse: collapse;
   border-spacing: 0;
   font-family: var(--secondary-font);
@@ -682,9 +701,9 @@ footer ul {
   .footer-safety-info ul {
     gap: 0.5rem;
   }
-  .prices-table {
+  /* .prices-table {
     padding: 48px;
-  }
+  } */
   th {
     font-size: var(--font-size-medium);
   }
@@ -790,7 +809,7 @@ footer ul {
   .h3-text {
     font-size: 1.25rem;
   }
-  .swiper-wrapper {
+  .swiper-container > .swiper-wrapper {
     padding-left: 0;
   }
   .swiper-container {
@@ -848,9 +867,9 @@ footer ul {
   .packages-info {
     grid-template-columns: repeat(1, 1fr);
   }
-  .prices-table {
+  /* .prices-table {
     padding: 28px;
-  }
+  } */
   .contacts-logo {
     max-width: 435px;
   }
@@ -910,5 +929,4 @@ footer ul {
     max-width: 330px;
     margin: 0 auto;
   }
-  
 }

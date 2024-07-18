@@ -13,7 +13,6 @@ const openMenu = () => {
 burger.addEventListener("click", openMenu);
 
 //..........Swiper initialization............//
-// document.addEventListener("DOMContentLoaded", () => {
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -27,8 +26,14 @@ const swiper = new Swiper(".swiper-container", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+const swiperVertical = new Swiper(".swiper-container-vertical", {
+  direction: "vertical",
+  slidesPerView: 1,
   scrollbar: {
     el: ".swiper-scrollbar",
+    draggable: true,
   },
+  mousewheel: true,
 });
-// });
