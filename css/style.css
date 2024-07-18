@@ -126,11 +126,14 @@ button,
   color: var(--main-white-color);
   line-height: var(--line-height-extra-small);
   border: none;
+  cursor: pointer;
 }
-.button2-style:hover{
-color: var(--main-text-color);
+.button2-style:hover {
+  color: var(--main-text-color);
 }
-
+.underline-hover:hover {
+  text-decoration: underline;
+}
 /* header style  */
 nav ul {
   display: flex;
@@ -140,6 +143,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.dropdown {
+  cursor: pointer;
 }
 .dropdown-content {
   display: none;
@@ -255,9 +261,10 @@ header {
 }
 .packages-info_block_button {
   padding: 13px 0;
+  cursor: pointer;
 }
-.packages-info_block_button:hover{
-color: var(--main-text-color);
+.packages-info_block_button:hover {
+  color: var(--main-text-color);
 }
 
 /* offers style  */
@@ -830,7 +837,7 @@ footer ul {
     display: none !important;
   }
   .prices-table table {
-    max-width: 502px
+    max-width: 502px;
   }
   .contacts-block {
     gap: 0;
@@ -880,7 +887,7 @@ footer ul {
     grid-template-columns: repeat(1, 1fr);
   }
   .prices-table table {
-    max-width: 402px
+    max-width: 402px;
   }
   .contacts-logo {
     max-width: 435px;
@@ -942,6 +949,6 @@ footer ul {
     margin: 0 auto;
   }
   .prices-table table {
-    max-width: 222px
+    max-width: 222px;
   }
 }
