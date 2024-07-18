@@ -450,7 +450,7 @@ input[type="email"] {
 }
 .prices-table table {
   width: 100%;
-  max-width: 902px;
+  max-width: 1064px;
   border-collapse: collapse;
   border-spacing: 0;
   font-family: var(--secondary-font);
@@ -617,6 +617,9 @@ footer ul {
   .offers-info_left-slider {
     max-width: 529px;
   }
+  .prices-table table {
+    max-width: 902px;
+  }
   .contacts-block {
     padding: 65px;
   }
@@ -701,9 +704,9 @@ footer ul {
   .footer-safety-info ul {
     gap: 0.5rem;
   }
-  /* .prices-table {
-    padding: 48px;
-  } */
+  .prices-table table {
+    max-width: 702px;
+  }
   th {
     font-size: var(--font-size-medium);
   }
@@ -820,6 +823,9 @@ footer ul {
   .swiper-button-prev {
     display: none !important;
   }
+  .prices-table table {
+    max-width: 502px
+  }
   .contacts-block {
     gap: 0;
     padding: 25px;
@@ -867,9 +873,9 @@ footer ul {
   .packages-info {
     grid-template-columns: repeat(1, 1fr);
   }
-  /* .prices-table {
-    padding: 28px;
-  } */
+  .prices-table table {
+    max-width: 402px
+  }
   .contacts-logo {
     max-width: 435px;
   }
@@ -928,5 +934,8 @@ footer ul {
   .swiper-container {
     max-width: 330px;
     margin: 0 auto;
+  }
+  .prices-table table {
+    max-width: 222px
   }
 }
