@@ -1,4 +1,4 @@
-// Open menu when click on burger
+//.........Open menu when click on burger............//
 const burger = document.querySelector(".header-burger");
 
 const openMenu = () => {
@@ -11,3 +11,24 @@ const openMenu = () => {
   document.getElementById("bar3").classList.toggle("sidebar-dekstop_bar3");
 };
 burger.addEventListener("click", openMenu);
+
+//..........Swiper initialization............//
+// document.addEventListener("DOMContentLoaded", () => {
+const swiper = new Swiper(".swiper-container", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+// });
