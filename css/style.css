@@ -26,6 +26,7 @@
   --main-white-color: #ffffff;
   --main-background-color: #f6f5f2;
   --button-background-color: #f2eada;
+  --swiper-pagination-color: #cc8e1e;
   --border-opacity-27: 1px solid rgba(204, 142, 30, 0.27);
 
   margin: 0;
@@ -308,7 +309,7 @@ header {
   background-image: url("../images/arrow-left.svg");
 }
 .swiper-button-next::after {
-  background-image: url("../images/arrow-right.svg");
+  background-image: url("../images/arrow-right.svg") !important;
 }
 .swiper-pagination {
   position: unset !important;
@@ -790,18 +791,15 @@ footer ul {
     font-size: 1.25rem;
   }
   .swiper-wrapper {
-    padding-left: 54px;
+    padding-left: 0;
   }
   .swiper-container {
-    max-width: 637px;
+    max-width: 660px;
   }
-  .offers-info_left-slider {
-    max-width: 529px;
-  }
+
   .swiper-button-next,
   .swiper-button-prev {
-    width: 46px !important;
-    height: 66px !important;
+    display: none !important;
   }
   .contacts-block {
     gap: 0;
@@ -829,6 +827,11 @@ footer ul {
   }
   .footer-warning {
     max-width: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .swiper-container {
+    max-width: 608px;
   }
 }
 @media (max-width: 620px) {
@@ -904,25 +907,8 @@ footer ul {
     max-width: 300px;
   }
   .swiper-container {
-    max-width: 334px;
-    margin: 0;
+    max-width: 330px;
+    margin: 0 auto;
   }
-  .swiper-wrapper {
-    padding-left: 24px;
-  }
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    width: 14px;
-    height: 14px;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    width: 26px !important;
-    height: 26px !important;
-    top: 40% !important;
-  }
-  .swiper-button-next{
-    right: 0 !important;
-  }
-
+  
 }
