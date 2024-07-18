@@ -12,6 +12,23 @@ const openMenu = () => {
 };
 burger.addEventListener("click", openMenu);
 
+//........go to another page......................//
+const buttons = document.querySelectorAll(".packages-info_block_button");
+buttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    window.location.href = "example.html";
+  });
+});
+
+//.......form button..........//
+const button = document.querySelector(".button2-style");
+const input = document.getElementById("name-surname");
+button.addEventListener("click", () => {
+  if (input.value) {
+    alert("Form Accepted");
+  }
+});
+
 //..........Swiper initialization............//
 const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,

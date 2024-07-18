@@ -127,6 +127,9 @@ button,
   line-height: var(--line-height-extra-small);
   border: none;
 }
+.button2-style:hover{
+color: var(--main-text-color);
+}
 
 /* header style  */
 nav ul {
@@ -252,6 +255,9 @@ header {
 }
 .packages-info_block_button {
   padding: 13px 0;
+}
+.packages-info_block_button:hover{
+color: var(--main-text-color);
 }
 
 /* offers style  */
